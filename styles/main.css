@@ -1,0 +1,70 @@
+body {
+    font-family: sans-serif;
+    background: #000;
+    color: #fff;
+    margin: 0;
+}
+header {
+    text-align: center;
+}
+header h1 {
+    padding: 1rem;
+    padding-bottom: 0;
+    margin: 0;
+    font-size: 4rem;
+}
+header h2 {
+    font-size: 1.5rem;
+}
+#pageBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50rem;
+    box-sizing: border-box;
+}
+article p {
+    padding: 1rem;
+}
+#cpuShare, #freeDriveSpace {
+    width: 50rem;
+}
+
+/*Pseudo Classes*/
+a {
+    color: #20c1e6;
+    text-decoration: none;
+}
+a:hover {
+    color: #b6e9f5;
+}
+
+@media screen and (max-width: 850px) {
+    body {
+        max-width: 100%;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+    header h2 {
+        font-size: 2rem;
+    }
+    article p {
+        width: 85%;
+        max-width: 100%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    #cpuShare, #freeDriveSpace {
+        padding:1rem;
+        width:90%;
+        height:auto;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Steam Hardware Survey Results </title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <header>
+    <h1>Steam Hardware Survey Results</h1>
+    <h2>by Lucas Fabian</h2>
+  </header>
+
+  <div id="pageBody">
+    <article>
+      <p>The Steam Hardware Survey is a voluntary survey given to all of the users of Steam, the most popular video game distribution platform for desktop computers. The survey collects several datapoints about the hardware that users are using to run Steam software, including CPU and GPU data, monitor resolution, and operating system.</p>
+      <div id="cpuShare"></div>
+      <p>Above is the CPU marketshare for PC users by manufacturer from 2012 to 2022. Intel is consistently leading AMD in the CPU market. The annual marketshare is taken from the survey publsihed on January first from each year, with the exception of 2022 which uses the datapoint from February first. The Steam Hardware Survey website only retains data from the current year, but using tools like the <a href="http://web.archive.org/">Wayback Machine</a>, GitHub user <a href="https://github.com/myagues">myagues</a> built a <a href="https://github.com/myagues/steam-hss-data">database</a> that stores the historical results of the survey. Using this database, myagues parsed some of the data in charts available on <a href="https://observablehq.com/@myagues/trends-from-the-steam-hardware-software-survey">ObservableHQ</a>.</p>
+      <div id="freeDriveSpace"></div>
+      <p>Above is the amount of free hard drive space that Steam users have. This datapoint is particularly pertinent for Steam as video game filesizes have been radically increasing in recent years. The presence or lack of free drive space, at least for Steam users, is usually indicative of the size of a user's downloaded game library.</p>
+    </article>
+  </div>
+
+  <!--Scripts-->
+  <script src="scripts/highcharts.js"></script>
+  <script src="scripts/modules/series-label.js"></script>
+  <script src="scripts/modules/exporting.js"></script>
+  <script src="scripts/modules/export-data.js"></script>
+  <script src="scripts/modules/accessibility.js"></script>
+  <script src="scripts/themes/high-contrast-light.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+</html>
